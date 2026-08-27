@@ -1,46 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+[build]
+  command = "vite build"
+  publish = "dist/client"
 
-  <title>Rádio Manias de Você</title>
-
-  <style>
-    html,
-    body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background: #05020b;
-    }
-
-    #radio-site {
-      position: fixed;
-      inset: 0;
-      width: 100vw;
-      height: 100vh;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      display: block;
-      background: #05020b;
-    }
-  </style>
-</head>
-
-<body>
-
-  <iframe
-    id="radio-site"
-    src="https://radiomaniasdevoce.fladmir.chatgpt.site/"
-    title="Rádio Manias de Você"
-    allow="autoplay; fullscreen; encrypted-media"
-    allowfullscreen
-    scrolling="yes">
-  </iframe>
-
-</body>
-</html>
+[dev]
+  command = "npm run dev"
+  targetPort = 3000
+  port = 8888
